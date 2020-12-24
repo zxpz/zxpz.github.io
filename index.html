@@ -73,7 +73,6 @@
 
 		<div class="tv-one">学生出入通行证</div>
 		<div class="tv-two">更新时间</div>
-		<div class="tv-three" id="nowtime">2020-12-22 06：00</div>
 
 
 		<div class="tv-three" id="outtime">出校时间：2020-11-26 06:00</div>
@@ -93,8 +92,7 @@
 				document.getElementById('name3').innerText="您("+name+")";
 			}
 			
-			var date = new Date(date.getTime());
-			document.getElementById('nowtime').innerText=+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" "+date.getHours()+":"+date.getMinutes()+":"+date.getMilliseconds();
+			var date = new Date();
 			document.getElementById('outtime').innerText="出校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 6：00";
 			document.getElementById('returntime').innerText="返校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 22:00";
 			
