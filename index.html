@@ -282,8 +282,9 @@
 			}
 			
 			var date = new Date();
-			document.getElementById('outtime').innerText="出校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 6：00";
-			document.getElementById('returntime').innerText="返校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 22:00";
+			document.getElementById(nowtime).innerText=date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" "+date.getHours()+":"+date.getMinutes()+":"+date.getMilliseconds();
+			document.getElementById(outtime).innerText="出校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 6：00";
+			document.getElementById(returntime).innerText="返校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 22:00";
 			
 			var tt = new Date(date.getTime()-(1000*60*60*24));
 			document.getElementById('apptime1').innerText=tt.getFullYear()+"-"+(tt.getMonth()+1)+"-"+tt.getDate()+" 10:15";
