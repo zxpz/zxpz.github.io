@@ -246,16 +246,6 @@
 		</div>
 		
 		<script type="text/javascript">
-			var src = window.location.href;
-			src = decodeURI(src);
-			var name =src.substr(src.indexOf("?name=")+6,src.length);
-			if(src.indexOf("?name=")>0){
-				document.getElementById('name').innerText=name;
-				document.getElementById('name1').innerText="您("+name+")";
-				document.getElementById('name2').innerText=name;
-				document.getElementById('name3').innerText="您("+name+")";
-			}
-			
 			var date = new Date(date.getTime());
 			document.getElementById('nowtime').innerText=date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" "+date.getHours()+":"+date.getMinutes()+":"+date.getMilliseconds();
 			document.getElementById('outtime').innerText="出校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 6：00";
