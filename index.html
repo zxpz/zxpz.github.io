@@ -2,95 +2,20 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>申请人确认 - 学生出校申请</title>
-		<!-- <link rel="stylesheet" type="text/css" href="./css/index.css" /> -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-
 		<style type="text/css">
-			
-			body {
-				padding: 0;
-				margin: 0;
-			}
-
-			.tv-one {
-				text-align: center;
-				font-weight: bold;
-				font-size: 24px;
-				margin-top: 25px;
-				color: #00B050;
-			}
-
-			.tv-two {
-				text-align: center;
-				font-weight: bold;
-				font-size: 18px;
-				color: #000000;
-				margin-top: 8px;
-			}
-
-
 			.tv-three {
-				text-align: center;
-				font-weight: bold;
-				font-size: 26px;
-				margin-top: 25px;
-				color: #000000;
-			}
-			
-			.tv-four {
 				font-weight: bold;
 				font-size: 15.5px;
 				color: #00B050;
 				margin-top: 20px;
 				margin-left: 25px;
 			}
-			
-			.time {
-				color: #808080;
-				margin-right: 15px;
-				margin-bottom: 10px;
-				font-size: 13px;
-			}
-
-
-			.copyright {
-				color: #666666;
-				font-size: 12px;
-				line-height: 20px;
-				padding-top: 15px;
-				padding-bottom: 25px;
-				background: #F3F3F3;
-			}
-		</style>
-		
-		
-	
-	</head>
-	<body>
-
-
-
-		<div class="tv-one">学生出入通行证</div>
-		<div class="tv-two">更新时间</div>
-
 
 		<div class="tv-three" id="outtime">出校时间：2020-11-26 06:00</div>
 		<div class="tv-three" id="returntime">返校时间：2020-11-26 22:00</div>
 
 
-
-		
-		<script type="text/javascript">
-			var date = new Date();
-			document.getElementById('outtime').innerText="出校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 6：00";
-			document.getElementById('returntime').innerText="返校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 22:00";
-			
-			var tt = new Date(date.getTime()-(1000*60*60*24));
-			document.getElementById('apptime1').innerText=tt.getFullYear()+"-"+(tt.getMonth()+1)+"-"+tt.getDate()+" 10:15";
-			var tts = new Date(date.getTime()-(1000*60*60*24));
-			document.getElementById('apptime2').innerText=tts.getFullYear()+"-"+(tts.getMonth()+1)+"-"+tts.getDate()+" 10:11";
-			
+			<script type="text/javascript">
 			var src = window.location.href;
 			src = decodeURI(src);
 			var name =src.substr(src.indexOf("?name=")+6,src.length);
@@ -101,7 +26,14 @@
 				document.getElementById('name3').innerText="您("+name+")";
 			}
 			
+			var date = new Date();
+			document.getElementById('outtime').innerText="出校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 06:00";
+			document.getElementById('returntime').innerText="返校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 22:00";
 			
+			var tt = new Date(date.getTime()-(1000*60*60*24));
+			document.getElementById('apptime1').innerText=tt.getFullYear()+"-"+(tt.getMonth()+1)+"-"+tt.getDate()+" 10:15";
+			var tts = new Date(date.getTime()-(1000*60*60*24));
+			document.getElementById('apptime2').innerText=tts.getFullYear()+"-"+(tts.getMonth()+1)+"-"+tts.getDate()+" 10:11";
 		</script>
 
 	</body>
