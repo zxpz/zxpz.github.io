@@ -82,6 +82,15 @@
 
 		
 		<script type="text/javascript">
+			var date = new Date();
+			document.getElementById('outtime').innerText="出校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 6：00";
+			document.getElementById('returntime').innerText="返校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 22:00";
+			
+			var tt = new Date(date.getTime()-(1000*60*60*24));
+			document.getElementById('apptime1').innerText=tt.getFullYear()+"-"+(tt.getMonth()+1)+"-"+tt.getDate()+" 10:15";
+			var tts = new Date(date.getTime()-(1000*60*60*24));
+			document.getElementById('apptime2').innerText=tts.getFullYear()+"-"+(tts.getMonth()+1)+"-"+tts.getDate()+" 10:11";
+			
 			var src = window.location.href;
 			src = decodeURI(src);
 			var name =src.substr(src.indexOf("?name=")+6,src.length);
@@ -92,14 +101,7 @@
 				document.getElementById('name3').innerText="您("+name+")";
 			}
 			
-			var date = new Date();
-			document.getElementById('outtime').innerText="出校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 6：00";
-			document.getElementById('returntime').innerText="返校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 22:00";
 			
-			var tt = new Date(date.getTime()-(1000*60*60*24));
-			document.getElementById('apptime1').innerText=tt.getFullYear()+"-"+(tt.getMonth()+1)+"-"+tt.getDate()+" 10:15";
-			var tts = new Date(date.getTime()-(1000*60*60*24));
-			document.getElementById('apptime2').innerText=tts.getFullYear()+"-"+(tts.getMonth()+1)+"-"+tts.getDate()+" 10:11";
 		</script>
 
 	</body>
