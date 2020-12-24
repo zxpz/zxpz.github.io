@@ -13,23 +13,13 @@
 
 		<div class="tv-three" id="outtime">出校时间：2020-11-26 06:00</div>
 		<div class="tv-three" id="returntime">返校时间：2020-11-26 22:00</div>
-		<div class="tv-three" id="nowtime"> 2020-12-22 06：00</div>
+
 
 			<script type="text/javascript">
-			var src = window.location.href;
-			src = decodeURI(src);
-			var name =src.substr(src.indexOf("?name=")+6,src.length);
-			if(src.indexOf("?name=")>0){
-				document.getElementById('name').innerText=name;
-				document.getElementById('name1').innerText="您("+name+")";
-				document.getElementById('name2').innerText=name;
-				document.getElementById('name3').innerText="您("+name+")";
-			}
 			
 			var date = new Date();
 			document.getElementById('outtime').innerText="出校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 06:00";
 			document.getElementById('returntime').innerText="返校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 22:00";
-			document.getElementById('nowtime').innerText=" "+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" "+date.getHours()+":"+date.getMinutes()+":"+date.getMilliseconds();
 			
 			var tt = new Date(date.getTime()-(1000*60*60*24));
 			document.getElementById('apptime1').innerText=tt.getFullYear()+"-"+(tt.getMonth()+1)+"-"+tt.getDate()+" 10:15";
