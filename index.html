@@ -290,8 +290,8 @@
 				document.getElementById('name3').innerText="您("+name+")";
 			}
 			
-			var date = new Date();
-			document.getElementById('outtime').innerText="："date.getFullYear()+"-"+(date.getMonth())+"-"+date.getDate()+"  "+(date.getHours())+":"+(date.getMinutes())+":"+"00";
+			var outtime = new Date();
+			document.getElementById('outtime').innerText="："date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+"  "+(date.getHours())+":"+(date.getMinutes())+":"+"00";
 			
 			var tt = new Date(date.getTime()-(1000*60*60*24));
 			document.getElementById('apptime1').innerText=tt.getFullYear()+"-"+(tt.getMonth()+1)+"-"+tt.getDate()+" 10:15";
