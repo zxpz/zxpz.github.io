@@ -50,9 +50,9 @@
 			.tv-three {
 				text-align: center;
 				font-weight: bold;
-				font-size: 26px;
+				font-size: 27px;
 				color: #000000;
-				margin-top: 20px;
+				margin-top: 5px;
 			}
 			
 			.tv-four {
@@ -60,6 +60,7 @@
 				font-size: 15.5px;
 				color: #00B050;
 				margin-top: 20px;
+				margin-left: 25px;
 			}
 
 			.img-gif {
@@ -173,7 +174,7 @@
 
 		<div class="toolbar">
 			<img class="back" src="./img/icon_back.png" />
-			<span class="sp-01">学生出校申请:申请人确认</span>
+			<span class="sp-01">申请人确认 - 学生出校申请</span>
 			<p class="serial-num">
 			</p>
 		</div>
@@ -254,7 +255,7 @@
 			}
 			
 			var date = new Date();
-			document.getElementById('nowtime').innerText=date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" "+date.getHours()+":"+date.getMinutes()+":"+date.getSeconds();
+			document.getElementById('nowtime').innerText=date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" "+date.getHours()+":"+date.getMinutes()+"："+date.getSeconds();
 			document.getElementById('outtime').innerText="出校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 06:00";
 			document.getElementById('returntime').innerText="返校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 22:00";
 			
