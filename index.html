@@ -87,11 +87,11 @@
 			}
 
 			.tv-three {
+				text-align: center;
 				font-weight: bold;
-				font-size: 15.5px;
-				color: #00B050;
+				font-size: 24px;
+				color: #000000;
 				margin-top: 8px;
-				margin-left: 25px;
 			}
 
 			.img-gif {
@@ -226,8 +226,7 @@
 			<img class="img-gif" src="img/success.gif" />
 		</div>
 
-		<div class="tv-three" id="outtime">出校时间：2020-11-26 06:00</div>
-		<div class="tv-three" id="returntime">返校时间：2020-11-26 22:00</div>
+		<div class="tv-three" id="outtime">2020-11-26 06:00</div>
 
 		<div class="person-info">
 			<span class="info-title">姓&nbsp &nbsp名：</span><span id="name">夏杭</span> <br>
@@ -292,8 +291,7 @@
 			}
 			
 			var date = new Date();
-			document.getElementById('outtime').innerText="出校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 06:00";
-			document.getElementById('returntime').innerText="返校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 22:00";
+			document.getElementById('outtime').innerText="："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+date.getTime(hh：mm：00);
 			
 			var tt = new Date(date.getTime()-(1000*60*60*24));
 			document.getElementById('apptime1').innerText=tt.getFullYear()+"-"+(tt.getMonth()+1)+"-"+tt.getDate()+" 10:15";
