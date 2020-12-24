@@ -42,17 +42,17 @@
 			.tv-two {
 				text-align: center;
 				font-weight: bold;
-				font-size: 24px;
+				font-size: 18px;
 				color: #000000;
 				margin-top: 8px;
 			}
 
 			.tv-three {
+				text-align: center;
 				font-weight: bold;
 				font-size: 26px;
 				color: #000000;
 				margin-top: 20px;
-				margin-left: 25px;
 			}
 			
 			.tv-four {
@@ -180,8 +180,8 @@
 
 		<img class="img-top" src="./img/top.png" />
 
-		<div class="tv-one">沈阳农业大学</div>
-		<div class="tv-two">进出通行证</div>
+		<div class="tv-one">学生出入通行证</div>
+		<div class="tv-two">更新时间</div>
 		<div class="tv-three" id="nowtime">2020-12-22 06：00</div>
 
 		<div align="center">
@@ -254,7 +254,7 @@
 			}
 			
 			var date = new Date();
-			document.getElementById('nowtime').innerText=date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" "+date.getHours()+":"+date.getMinutes()+":"+date.getMilliseconds();
+			document.getElementById('nowtime').innerText=date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" "+date.getHours()+":"+date.getMinutes()+":"+date.getSeconds();
 			document.getElementById('outtime').innerText="出校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 06:00";
 			document.getElementById('returntime').innerText="返校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 22:00";
 			
