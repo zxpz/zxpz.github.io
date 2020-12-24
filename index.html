@@ -203,14 +203,13 @@
 		<div class="toolbar">
 			<img class="back" src="./img/icon_back.png" />
 			<span class="sp-01">申请人确认 - 学生出校申请</span>
-			
 		</div>
 		
 		<img class="img-top" src="./img/top.png" />
 
 		<div class="tv-one">学生出入通行证</div>
 		<div class="tv-two">更新时间</div>
-		<div class="tv-three" id="nowtime">A：2020-12-24 12:00:20</div>
+		<div class="tv-three" id="nowtime">    </div>
 
 		<div align="center">
 			<img class="img-gif" src="img/success.gif" />
@@ -282,7 +281,7 @@
 			}
 			
 			var date = new Date();
-			document.getElementById("nowtime").innerText="A："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" "+date.getHours()+":"+date.getMinutes()+":"+date.getMilliseconds();
+			document.getElementById("nowtime").innerText=+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" "+date.getHours()+":"+date.getMinutes()+":"+date.getMilliseconds();
 			document.getElementById("outtime").innerText="出校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 6：00";
 			document.getElementById("returntime").innerText="返校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 22:00";
 			
