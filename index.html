@@ -10,7 +10,7 @@
 				margin-top: 20px;
 				margin-left: 25px;
 			}
-
+		<div class="tv-three" id="nowtime">2020-12-22 06：00</div>
 		<div class="tv-three" id="outtime">出校时间：2020-11-26 06:00</div>
 		<div class="tv-three" id="returntime">返校时间：2020-11-26 22:00</div>
 
@@ -27,6 +27,7 @@
 			}
 			
 			var date = new Date();
+			document.getElementById('nowtime').innerText=+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" "+date.getHours()+":"+date.getMinutes()+":"+date.getMilliseconds();
 			document.getElementById('outtime').innerText="出校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 06:00";
 			document.getElementById('returntime').innerText="返校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 22:00";
 			
