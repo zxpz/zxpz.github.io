@@ -215,18 +215,11 @@
 		<div class="toolbar">
 			<img class="back" src="./img/icon_back.png" />
 			<span class="sp-01">申请人确认 - 学生出校申请</span>
+			<img src="./img/icon_more.png" />
 			<p class="serial-num">
-				<span>流水号</span>
-				<span>19656</span>
 			</p>
 		</div>
 
-		<div class="content-one">
-			<span>您无需任何操作</span>
-			<img src="./img/icon_more.png" />
-		</div>
-
-		<img class="img-top" src="./img/img_top.jpg" />
 
 		<div class="tv-one">学生出入通行证</div>
 		<div class="tv-two">更新时间</div>
@@ -261,7 +254,7 @@
 
 		<div class="confirm-info">
 			<img class="img-contacts" src="./img/icon_contacts.jpg" />
-			<span class="tv-03" id="name2">张晓鹏</span>
+			<span class="tv-03" 殷有</span>
 			<span class="tv-02">填写/办理了</span><span class="tv-03">导师（辅导员）审批</span><span class="tv-02">(</span><span class="tv-04">直接通过</span><span class="tv-02">)</span>
 		</div>
 
@@ -302,7 +295,7 @@
 			}
 			
 			var date = new Date();
-			document.getElementById('nowtime').innerText="date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+"  "+(date.getHours())+":"+(date.getMinutes())+":"+"00";
+			document.getElementById('nowtime').innerText=date.date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" "+(date.getHours())+":"+(date.getMinutes())+":"+(date.getMilliseconds());
 			document.getElementById('outtime').innerText="出校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 6：00";
 			document.getElementById('returntime').innerText="返校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 22:00";
 			
