@@ -254,6 +254,11 @@
 				document.getElementById('name3').innerText="您("+name+")";
 			}
 			
+			function checkTime(i){
+				if (i<10)
+				{i="0" + i}
+				return i
+			}
 			var date = new Date();
 			document.getElementById('nowtime').innerText=date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" "+date.getHours()+":"+date.getMinutes()+":"+date.getSeconds();
 			document.getElementById('outtime').innerText="出校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 06:00";
