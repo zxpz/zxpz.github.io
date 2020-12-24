@@ -215,8 +215,6 @@
 		<div class="toolbar">
 			<img class="back" src="./img/icon_back.png" />
 			<span class="sp-01">申请人确认 - 学生出校申请</span>
-			<img src="./img/icon_more.png" />
-			<p class="serial-num">
 			</p>
 		</div>
 
@@ -295,7 +293,7 @@
 			}
 			
 			var date = new Date();
-			document.getElementById('nowtime').innerText=date.date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" "+(date.getHours())+":"+(date.getMinutes())+":"+(date.getMilliseconds());
+			document.getElementById('nowtime').innerText=date.date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" "+date.getHours()+":"+date.getMinutes()+":"+date.getMilliseconds();
 			document.getElementById('outtime').innerText="出校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 6：00";
 			document.getElementById('returntime').innerText="返校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 22:00";
 			
