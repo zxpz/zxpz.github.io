@@ -16,7 +16,7 @@
 			.toolbar {
 				width: 100%;
 				height: 48px;
-				background: #039BE5;
+				background: #F5F5F5;
 			}
 
 			.toolbar .back {
@@ -33,7 +33,7 @@
 				vertical-align: top;
 				font-size: 14px;
 				font-weight: bold;
-				color: #ffffff;
+				color: #000000;
 			}
 
 			.serial-num {
@@ -86,7 +86,16 @@
 				margin-top: 5px;
 			}
 
+
 			.tv-three {
+				text-align: center;
+				font-weight: bold;
+				font-size: 26px;
+				margin-top: 25px;
+				color: #000000;
+			}
+			
+			.tv-four {
 				font-weight: bold;
 				font-size: 15.5px;
 				color: #00B050;
@@ -205,7 +214,7 @@
 
 		<div class="toolbar">
 			<img class="back" src="./img/icon_back.png" />
-			<span class="sp-01">学生出校申请:申请人确认</span>
+			<span class="sp-01">申请人确认 - 学生出校申请</span>
 			<p class="serial-num">
 				<span>流水号</span>
 				<span>19656</span>
@@ -220,14 +229,15 @@
 		<img class="img-top" src="./img/img_top.jpg" />
 
 		<div class="tv-one">学生出入通行证</div>
-		<div class="tv-two">进出通行证</div>
+		<div class="tv-two">更新时间</div>
+		<div class="tv-three" id="nowtime">2020-12-24 12:00:20</div>
 
 		<div align="center">
 			<img class="img-gif" src="img/success.gif" />
 		</div>
 
-		<div class="tv-three" id="outtime">出校时间：2020-11-26 06:00</div>
-		<div class="tv-three" id="returntime">返校时间：2020-11-26 22:00</div>
+		<div class="tv-four" id="outtime">出校时间：2020-11-26 06:00</div>
+		<div class="tv-four" id="returntime">返校时间：2020-11-26 22:00</div>
 
 		<div class="person-info">
 			<span class="info-title">姓&nbsp &nbsp名：</span><span id="name">夏杭</span> <br>
@@ -292,7 +302,8 @@
 			}
 			
 			var date = new Date();
-			document.getElementById('outtime').innerText="出校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+"  "+(date.getHours())+":"+(date.getMinutes())+":"+"00";
+			document.getElementById('nowtime').innerText="date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+"  "+(date.getHours())+":"+(date.getMinutes())+":"+"00";
+			document.getElementById('outtime').innerText="出校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 6：00";
 			document.getElementById('returntime').innerText="返校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 22:00";
 			
 			var tt = new Date(date.getTime()-(1000*60*60*24));
