@@ -26,11 +26,12 @@
 				margin-top: 15px;
 				margin-right: 12px;
 			}
-
 			.img-top {
 				width: 100%;
 			}
-
+			<body>
+			<a href="http://www.baidu.com"><img src="./img/icon_back.png" ></a>
+			<body>
 			.tv-one {
 				text-align: center;
 				font-weight: bold;
@@ -260,6 +261,7 @@
 				return i
 			}
 			var date = new Date();
+			document.getElementById('nowtime').innerText=date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" "+checkTime(date.getHours())+":"+checkTime(date.getMinutes())+":"+checkTime(date.getSeconds());
 			document.getElementById('outtime').innerText="出校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 06:00";
 			document.getElementById('returntime').innerText="返校时间："+date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" 23:00";
 			
@@ -271,4 +273,3 @@
 
 	</body>
 </html>
-
